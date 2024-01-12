@@ -4,12 +4,41 @@ max-width=1920px
 1920-240-240=1440/1920= 0.75%= 75% content width */
 /* <<<<<<<<<<<<<<<<Font family Lato link>>>>>>>>>>>>>>>>  */
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+/* reused variables */
+:root {
+  --primary-red: #e55473;
+  --primary-black: #27272799;
+  --primary-line-height: 23px;
+  --primary-font-size: 14px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+/* body related styles */
 body {
   max-width: 1920px;
   font-family: "Lato", sans-serif;
+}
+
+/* reused utils class*/
+.btn {
+  color: #fff;
+  border: none;
+  padding: 15px 32px;
+  border-radius: 8px;
+  background: #e55473;
+  font-size: 15px;
+  font-weight: 700;
+}
+.para {
+  color: var(--primary-black);
+  font-size: var(--primary-font-size);
+  line-height: var(--primary-line-height);
+}
+.container {
+  width: 75%;
+  margin: auto;
 }
