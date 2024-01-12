@@ -1,3 +1,4 @@
+/* <<<<<<<Figma Analysis>>>>>>>>>> */
 /* max-width= 1920px
 margin left =240px right also same 240px
 max-width=1920px
@@ -22,6 +23,9 @@ body {
   max-width: 1920px;
   font-family: "Lato", sans-serif;
   margin: auto;
+}
+footer {
+  height: 100vh;
 }
 a {
   text-decoration: none;
@@ -78,4 +82,51 @@ header {
 }
 .header_image_box {
   padding-top: 45px;
+}
+/* ===================== Responsive design =================== */
+/* <<<<<<<<<<<<<<<<<<<< Mid Devices Responsive Header Related  Styles>>>>>>>>>>>>>>>>>>> */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .header_parent {
+    flex-direction: column-reverse;
+    height: 100%;
+    gap: 30px;
+  }
+  .header_content_box h2 {
+    font-size: 40px;
+    color: var(--secondary-black);
+    margin-top: 0px;
+  }
+  .header_content_box {
+    padding-bottom: 40px;
+  }
+  .header_image_box {
+    padding-top: 20px;
+  }
+  .btn {
+    padding: 12px 22px;
+    font-size: 14px;
+  }
+}
+/* <<<<<<<<<<<<<<<<<<<< Small Devices Responsive Header Related  Styles>>>>>>>>>>>>>>>>>>> */
+@media screen and (max-width: 576px) {
+  .header_parent {
+    flex-direction: column-reverse;
+    height: 100%;
+    gap: 20px;
+  }
+  .header_content_box h2 {
+    font-size: 30px;
+    color: var(--secondary-black);
+    margin-top: 0px;
+  }
+  .header_content_box {
+    padding-bottom: 30px;
+  }
+  .header_image_box {
+    padding-top: 20px;
+  }
+  .btn {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
 }
