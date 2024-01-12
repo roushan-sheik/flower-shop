@@ -1,6 +1,15 @@
-/* total hight= 1920px
-margin left =240px right also same 
+/* max-width= 1920px
+margin left =240px right also same 240px
+max-width=1920px
 1920-240-240=1440/1920= 0.75%= 75% content width */
+/* <<<<<<<<<<<<<<<<Font family Lato link>>>>>>>>>>>>>>>>  */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 * {
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1920px;
+  font-family: "Lato", sans-serif;
 }
