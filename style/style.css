@@ -8,6 +8,7 @@ max-width=1920px
 :root {
   --primary-red: #e55473;
   --primary-black: #27272799;
+  --secondary-black: #272727;
   --primary-line-height: 23px;
   --primary-font-size: 14px;
 }
@@ -27,6 +28,15 @@ a {
   font-size: 15px;
 }
 /* reused utils class*/
+.container {
+  width: 75%;
+  margin: auto;
+}
+.title {
+  font-weight: 800;
+  color: var(--secondary-black);
+  font-size: 30px;
+}
 .btn {
   color: #fff;
   border: none;
@@ -42,9 +52,26 @@ a {
   line-height: var(--primary-line-height);
   padding: 18px 0;
 }
-.container {
-  width: 75%;
-  margin: auto;
+.img {
+  width: 100%;
+  height: 100%;
 }
+
 /* =======================reused utils classes end==================>*/
 /* <<<<<<<<<<<<<<<<<<<<Header Related  Styles>>>>>>>>>>>>>>>>>>> */
+.header_parent {
+  display: flex;
+  height: 638px;
+  gap: 72px;
+}
+.header_parent div {
+  flex: 1;
+}
+.header_content_box h2 {
+  font-size: 60px;
+  color: var(--secondary-black);
+  margin-top: 145px;
+}
+.header_image_box {
+  padding-top: 45px;
+}
